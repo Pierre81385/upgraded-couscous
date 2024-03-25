@@ -8,8 +8,7 @@
 import Foundation
 import FirebaseFirestore
 
-struct Message: Codable, Identifiable, Equatable {
-    @DocumentID var id: String? = UUID().uuidString
+struct Message: Codable, Equatable {
     var sender: String
     var text: String
     var timestamp: Double = Date().timeIntervalSince1970

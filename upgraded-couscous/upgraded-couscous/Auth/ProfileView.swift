@@ -20,22 +20,25 @@ struct ProfileView: View {
             
             ZStack {
                 VStack {
+                    HStack {
+                        Button(action: {
+                            logout = true
+                        }, label: {
+                            Text("Back")
+                        }).navigationDestination(isPresented: $logout, destination: { LoginView().navigationBarBackButtonHidden(true) })
+                        Spacer()
+                    }.padding()
+                    Spacer()
                     Text(user?.uid ?? "Ooops something went wrong!")
                     Text(user?.email ?? "Logout to start over.")
                     HStack {
-                        Button(action: {
-                            auth.SignOut()
-                            logout = true
-                        }, label: {
-                            Text("Logout")
-                        }).navigationDestination(isPresented: $logout, destination: { LoginView().navigationBarBackButtonHidden(true) })
-                        
                         Button(action: {
                             chat = true
                         }, label: {
                             Text("Chat")
                         }).navigationDestination(isPresented: $chat, destination: { ChatView().navigationBarBackButtonHidden(true) })
                     }.padding()
+                    Spacer()
                 }.onAppear {
                     user = auth.GetCurrentUser()
                 }

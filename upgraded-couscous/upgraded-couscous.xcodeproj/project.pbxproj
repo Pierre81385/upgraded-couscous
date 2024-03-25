@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B113DA6F2BAFF53C007941C1 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */; };
 		B1DC396B2B9FB07B002106EB /* upgraded_couscousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC396A2B9FB07B002106EB /* upgraded_couscousApp.swift */; };
 		B1DC396D2B9FB07B002106EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC396C2B9FB07B002106EB /* ContentView.swift */; };
 		B1DC396F2B9FB07B002106EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC396E2B9FB07B002106EB /* Assets.xcassets */; };
@@ -25,6 +26,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
 		B1DC39672B9FB07B002106EB /* upgraded-couscous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "upgraded-couscous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DC396A2B9FB07B002106EB /* upgraded_couscousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upgraded_couscousApp.swift; sourceTree = "<group>"; };
 		B1DC396C2B9FB07B002106EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 			children = (
 				B1DC39982BA53BE8002106EB /* Models */,
 				B1DC39992BA53CC8002106EB /* ChatView.swift */,
+				B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B113DA6F2BAFF53C007941C1 /* ImagePickerView.swift in Sources */,
 				B1DC397C2B9FB284002106EB /* LoginView.swift in Sources */,
 				B1DC39972BA51573002106EB /* ChatModel.swift in Sources */,
 				B1DC396D2B9FB07B002106EB /* ContentView.swift in Sources */,

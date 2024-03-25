@@ -13,6 +13,7 @@ import FirebaseAuth
 struct ChatView: View {
     @State private var text: String = ""
     @State private var user: User?
+    @State private var profile: Bool = false
     @State private var auth = FireAuth(status: false, response: "")
     @ObservedObject var messages = MessageModel(message: Message(sender: "", text: ""), messages: [], status: false, response: "")
     
@@ -20,7 +21,15 @@ struct ChatView: View {
         NavigationStack {
             ZStack {
                 VStack {
-                    List(messages.messages) {
+                    HStack {
+                        Button(action: {
+                            profile = true
+                        }, label: {
+                            Text("Back")
+                        }).navigationDestination(isPresented: $profile, destination: { ProfileView().navigationBarBackButtonHidden(true) })
+                        Spacer()
+                    }.padding()
+                    List(messages.messages, id: \.timestamp) {
                         message in
                         if (message.sender == user?.email) {
                             SenderMessage(message: message)
@@ -33,17 +42,17 @@ struct ChatView: View {
                     HStack {
                         TextField("...", text: $text)
                                             .accentColor(.black)
-                                            .padding()
                                             .autocapitalization(.none)
                                             .autocorrectionDisabled(true)
                         Button(action: {
                             messages.message.sender = (user?.email)!
                             messages.message.text = text
                             messages.createMessage()
+                            text = ""
                         }, label: {
                             Text("SEND")
                         })
-                    }
+                    }.padding()
                 }.onAppear{
                     messages.snapshotAllMessages()
                     user = auth.GetCurrentUser()
