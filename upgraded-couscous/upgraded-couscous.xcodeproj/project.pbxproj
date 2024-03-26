@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		B113DA6F2BAFF53C007941C1 /* ImagePickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */; };
+		B113DA712BB1DE73007941C1 /* StorageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113DA702BB1DE73007941C1 /* StorageModel.swift */; };
+		B113DA732BB22E2B007941C1 /* ImageFeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B113DA722BB22E2B007941C1 /* ImageFeedView.swift */; };
 		B1DC396B2B9FB07B002106EB /* upgraded_couscousApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC396A2B9FB07B002106EB /* upgraded_couscousApp.swift */; };
 		B1DC396D2B9FB07B002106EB /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC396C2B9FB07B002106EB /* ContentView.swift */; };
 		B1DC396F2B9FB07B002106EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1DC396E2B9FB07B002106EB /* Assets.xcassets */; };
@@ -21,12 +23,13 @@
 		B1DC398C2B9FB4BA002106EB /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B1DC398B2B9FB4BA002106EB /* FirebaseFirestore */; };
 		B1DC398E2B9FB4BA002106EB /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = B1DC398D2B9FB4BA002106EB /* FirebaseStorage */; };
 		B1DC39952BA5154E002106EB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC39942BA5154E002106EB /* MessageModel.swift */; };
-		B1DC39972BA51573002106EB /* ChatModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC39962BA51573002106EB /* ChatModel.swift */; };
 		B1DC399A2BA53CC8002106EB /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1DC39992BA53CC8002106EB /* ChatView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePickerView.swift; sourceTree = "<group>"; };
+		B113DA702BB1DE73007941C1 /* StorageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageModel.swift; sourceTree = "<group>"; };
+		B113DA722BB22E2B007941C1 /* ImageFeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFeedView.swift; sourceTree = "<group>"; };
 		B1DC39672B9FB07B002106EB /* upgraded-couscous.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "upgraded-couscous.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1DC396A2B9FB07B002106EB /* upgraded_couscousApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = upgraded_couscousApp.swift; sourceTree = "<group>"; };
 		B1DC396C2B9FB07B002106EB /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -38,7 +41,6 @@
 		B1DC39842B9FB2F1002106EB /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
 		B1DC39862B9FB3D4002106EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		B1DC39942BA5154E002106EB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
-		B1DC39962BA51573002106EB /* ChatModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatModel.swift; sourceTree = "<group>"; };
 		B1DC39992BA53CC8002106EB /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -113,6 +115,7 @@
 				B1DC39982BA53BE8002106EB /* Models */,
 				B1DC39992BA53CC8002106EB /* ChatView.swift */,
 				B113DA6E2BAFF53C007941C1 /* ImagePickerView.swift */,
+				B113DA722BB22E2B007941C1 /* ImageFeedView.swift */,
 			);
 			path = Social;
 			sourceTree = "<group>";
@@ -143,7 +146,7 @@
 			isa = PBXGroup;
 			children = (
 				B1DC39942BA5154E002106EB /* MessageModel.swift */,
-				B1DC39962BA51573002106EB /* ChatModel.swift */,
+				B113DA702BB1DE73007941C1 /* StorageModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -229,11 +232,12 @@
 			files = (
 				B113DA6F2BAFF53C007941C1 /* ImagePickerView.swift in Sources */,
 				B1DC397C2B9FB284002106EB /* LoginView.swift in Sources */,
-				B1DC39972BA51573002106EB /* ChatModel.swift in Sources */,
 				B1DC396D2B9FB07B002106EB /* ContentView.swift in Sources */,
+				B113DA712BB1DE73007941C1 /* StorageModel.swift in Sources */,
 				B1DC399A2BA53CC8002106EB /* ChatView.swift in Sources */,
 				B1DC39852B9FB2F1002106EB /* AuthModel.swift in Sources */,
 				B1DC39802B9FB2A7002106EB /* ProfileView.swift in Sources */,
+				B113DA732BB22E2B007941C1 /* ImageFeedView.swift in Sources */,
 				B1DC39952BA5154E002106EB /* MessageModel.swift in Sources */,
 				B1DC396B2B9FB07B002106EB /* upgraded_couscousApp.swift in Sources */,
 				B1DC397E2B9FB28A002106EB /* RegistrationView.swift in Sources */,
